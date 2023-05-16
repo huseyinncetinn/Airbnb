@@ -106,19 +106,24 @@
                                         </div>
                                         
                                 </div>
-                                <form method="POST" action="">
-                                    {% csrf_token %}
-                                    <input type="hidden" name="postId" value="{{post.id}}">
-                                    <button name="begen" type="submit"
-                                    {% if request.user in post.like.all  %}
-                                    class='likebuttonkirmizi'
-                                    {% else %}
-                                    class="likebutton" 
-                                    {% endif %}   
-                                    >
-                                    <i class="fa-solid fa-heart"></i>
-                                    </button>
-                                </form>
+                            {% if user.is_authenticated %}
+                            <form method="POST" action="">
+                                {% csrf_token %}
+                                <input type="hidden" name="postId" value="{{post.id}}">
+                                <button name="begen" type="submit"
+                                {% if request.user in post.like.all  %}
+                                class='likebuttonkirmizi'
+                                {% else %}
+                                class="likebutton" 
+                                {% endif %}   
+                                >
+                                <i class="fa-solid fa-heart"></i>
+                                </button>
+                            </form>
+                            {% else %}
+                            <a class="likebutton" href="{% url 'loginregister' %}"><i  class="fa-solid fa-heart"></i></a>
+                            {% endif %}
+                                
                                         
                                 <button  class="carousel-control-prev" type="button" data-bs-target="#{{post.id}}" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon crsl" aria-hidden="true"></span>

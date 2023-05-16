@@ -159,12 +159,15 @@ def logout_request (request):
 
 def favori(request):
     begeni = Post.objects.filter(like__in = [request.user])
+    uzunluk = len(begeni)
+    print(uzunluk)
     if request.method == 'POST':
         begen(request)
         return redirect('favori')
     begen(request)
     context={
-        'begeni' : begeni
+        'begeni' : begeni,
+        'uzunluk' :uzunluk
     }
     return render(request, 'favori.html',context)
 
