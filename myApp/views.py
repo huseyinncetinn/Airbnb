@@ -23,14 +23,8 @@ def begen(request):
                 post.like.add(request.user)
                 post.save() 
 
-def index(request):
-    posts = Post.objects.all().order_by('?')
-    kategoriler = Kategori.objects.all()
-
-    if request.method == 'POST':
-        begen(request)
-        return redirect('anasayfa')
-    
+def yildiz(request):
+    posts = Post.objects.all()
     for i in posts:
         begeni = i.like.all().count()
         yildiz = 0
@@ -46,6 +40,16 @@ def index(request):
             yildiz = 5
         i.yildiz = yildiz
         i.save()
+
+def index(request):
+    posts = Post.objects.all().order_by('?')
+    kategoriler = Kategori.objects.all()
+
+    if request.method == 'POST':
+        begen(request)
+        return redirect('anasayfa')
+    
+    yildiz(request)
 
 
     
@@ -78,6 +82,9 @@ def filter(request):
             return redirect(f'/filter/?min_price={minprice}&max_price={maxprice}&kategori={kategori}&location={location}')
     except:
         return redirect('/')
+    
+    yildiz(request)
+
     context={
         'kategoriler' :kategoriler,
         'posts' : posts,
@@ -94,6 +101,7 @@ def kategori(request,slug):
     if request.method == 'POST':
         begen(request)
         return redirect('kategori', slug = kategori.slug)
+    yildiz(request)
     context={
             'posts' :posts,
             'kategoriler' : kategoriler
@@ -209,6 +217,8 @@ def detay(request , postId):
         yorumId = request.POST['userYorum']
         yorums = Yorum.objects.get(id = yorumId)
         yorums.delete()
+
+    yildiz(request)
     
     context = {
         'postDetay' : postDetay,
