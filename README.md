@@ -1,7 +1,7 @@
 
 # Airbnb Clone
 
-Grubumuz Airbnb benzeri bir web sitesi klonu oluşturduk. Bu, gerçek bir uygulama geliştirme deneyimi kazanmamıza ve yazılım becerilerimizi geliştirmemize yardımcı oldu. Bu proje aynı zamanda ekip çalışması becerilerimizi de geliştirdi ve projenin tamamlanması için planlama, tasarım, geliştirme ve test süreçleri gibi birçok farklı aşamayı içeren tam bir yazılım geliştirme yaşantısına tanıklık etmemize olanak sağladı.
+Airbnb benzeri bir web sitesi klonu oluşturdum. Bu, gerçek bir uygulama geliştirme deneyimi kazanmama ve yazılım becerilerimi geliştirme yardımcı oldu. Bu proje aynı zamanda planlama, tasarım, geliştirme ve test süreçleri gibi birçok farklı aşamayı içeren tam bir yazılım geliştirme yaşantısına tanıklık etmemize olanak sağladı.
 
 
 ## Özellikler
@@ -74,15 +74,5 @@ Bu kısımda kullanıcılar kendilerinden istenen 3 veriyi doldurup istedikleri 
 
 ![Uygulama Ekran Görüntüsü](https://i.hizliresim.com/a5a17vl.jpeg)
 
-
-
-
-
-## Yazarlar ve Teşekkür
-
-- [@irem1233](https://github.com/irem1233) tasarım ve geliştirme için.
-- [@alpdmrl](https://github.com/alpdmrl) tasarım ve geliştirme için.
-- [@oseasl](https://github.com/oseasl) tasarım ve geliştirme için.
-- [@senadurcan](https://github.com/senadurcan) tasarım ve geliştirme için.
 
   
