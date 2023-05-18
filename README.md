@@ -7,7 +7,7 @@ Airbnb benzeri bir web sitesi klonu oluşturdum. Bu, gerçek bir uygulama geliş
 ## Özellikler
 
 - HTML , CSS 
-- Javascript , Phyton
+- Javascript , Pyhton
 - Bootstrap , Django
 
 
