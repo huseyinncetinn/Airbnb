@@ -1,7 +1,7 @@
 
 # Airbnb Clone
 
-Airbnb benzeri bir web sitesi klonu oluşturdum. Bu, gerçek bir uygulama geliştirme deneyimi kazanmama ve yazılım becerilerimi geliştirme yardımcı oldu. Bu proje aynı zamanda planlama, tasarım, geliştirme ve test süreçleri gibi birçok farklı aşamayı içeren tam bir yazılım geliştirme yaşantısına tanıklık etmemize olanak sağladı.
+Airbnb benzeri bir web sitesi klonu oluşturdum. Bu, gerçek bir uygulama geliştirme deneyimi kazanmama ve yazılım becerilerimi geliştirme yardımcı oldu. Bu proje aynı zamanda planlama, tasarım, geliştirme ve test süreçleri gibi birçok farklı aşamayı içeren tam bir yazılım geliştirme yaşantısına tanıklık etmeme olanak sağladı.Proje tamemen responsivedir.
 
 
 ## Özellikler
